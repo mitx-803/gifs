@@ -1,0 +1,68 @@
+/*
+*/
+
+#pic-hover {
+  position: relative;
+  width: 720px;
+  height: 413px;
+  top: 60px;
+  display: inline-block;
+}
+
+#gif-hover {
+  position: relative;
+  width: 720px;
+  height: 413px;
+  top: 60px;
+  display: inline-block;
+}
+
+#hover {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  top: 231px;
+  width: 70px;
+  height: 50px;
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  font-weight: bold;
+}
+
+#pic-click {
+  position: relative;
+  width: 720px;
+  height: 413px;
+  top: 60px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#gif-click {
+  position: relative;
+  width: 720px;
+  height: 413px;
+  top: 60px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#click {
+  position: absolute;
+  left: 50%;
+  margin-left: 120px;
+  top: 231px;
+  width: 70px;
+  height: 50px;
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  height: auto;
+  justify-content: center;
+}
