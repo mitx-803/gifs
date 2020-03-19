@@ -1,0 +1,61 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="gif_click_06.css" />
+</head>
+
+<div class="wrapper">
+  <section>
+  <img id="pic-hover" src="python_06_new.png" />
+  <img id="gif-hover" src="python_06.gif" />
+  <button id="hover">Hover to play gif</button>
+</section>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('#gif-hover').hide();
+  $('#hover').on("mouseover", function() {
+    $('#hover').hide();
+    $('#gif-hover').show();
+    $('#pic-hover').hide();
+  });
+
+  $('#gif-hover').on("mouseout", function() {
+    $('#hover').show();
+    $('#gif-hover').hide();
+    $('#pic-hover').show();
+  });
+
+  $('#gif-click').hide();
+  $('#click').click(function() {
+    $('#click').hide();
+    $('#gif-click').show();
+    $('#pic-click').hide();
+  });
+
+  if ($('#click').data("clicked", true)) {
+    $('#gif-click').click(function() {
+      $('#click').show();
+      $('#gif-click').hide();
+      $('#pic-click').show();
+    });
+  }
+
+});
+</script>
+
+<!--
+<div id="gifdiv">
+  <img src="../images/exp1_panel3_new_B.png" />
+</div>
+<script type="text/javascript">
+  $("#gifdiv").click(function () {
+    if ($(this).find("img").attr("data-state") == "static") {
+      $(this).find("img").attr("src", "animatedgif.gif");
+    } else {
+      $(this).find("img").attr("src", "staticgif.jpg");
+    }
+  });
+</script>
+-->
+
